@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta charset="UTF-8" />
+    <title>for you</title>
+    <link rel="stylesheet" type="text/css" href="./css/format.css" />
+  </head>
+
+  <body style="margin: 0px">
+    <audio autoplay loop>
+      <source src="music/music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio.
+    </audio>
+
+    <canvas></canvas>
+    <div id="imgTxt">
+      <span id="Txt"></span> <br />
+      <span id="tmp"></span>
+      <img id="img" src="" />
+    </div>
+    <div id="heartTxt">
+      <span id="clickMe">Click for next !</span>
+      <div id="heart">
+        <button id="button" onclick="play()"></button>
+      </div>
+    </div>
+    <div id="content">
+      <h2 id="together">We have known each other for</h2>
+      <div id="timer">
+        <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes
+        <b id="s"></b> Seconds
+      </div>
+      <h3 id="together">and i've loved every second with you</h3>
+    </div>
+
+    <div id="typeDiv">
+      <span id="txt1"></span> <br />
+      <span id="txt2"></span>
+    </div>
+
+    <script>
+      var ok = 0;
+      var flag = 1;
+      var myImage = document.getElementById("img");
+      var myTxt = document.getElementById("Txt");
+      var imageArray = [
+        // var imageArray = new Array(3);
+        // imageArray[0] = new Image(100, 200);
+        // imageArray[0] = "pic/pic1.jpg";
+        // imageArray[0].width = "400px";
+        // imageArray[0].height = "400px";
+
+        "pic/pic1.jpg",
+        "pic/pic2.jpg",
+        "pic/pic3.jpg",
+        "pic/pic4.jpg",
+        "pic/pic5.jpg",
+        "pic/pic6.jpg",
+        "pic/pic7.jpg",
+        "pic/pic8.jpg",
+      ];
+      var imageIndex = 0;
+      var txtArray = [
+        " <br> You and I are perfect for each other never believe anything else <br> I  &nbsp; LOVE &nbsp;  YOU   <br>So , are u willing to be as crazy for me as i am for you , will u be mine and make me your forever ? <br><a href='https://meet.google.com/zxn-aeeg-pfs'>right click on it and select open in new tab </a>",
+        "Hey you , you amazing angel, i guess u already know what this is about , its been months and i have tried my best <br> to tell you how much i love you , you awakened a feeling in me which i didnt even believe if it existed at a point .<br> but here i am today feeling this unconditional love for someone just too pure for this world <br> u have known me since a long time and i have grown with and in love you...(keep clicking on the heart for next :)",
+        "<br> what I realised in those 3 days , when u brought out what I was trying to find since months and when I knew it ,<br> it just made everything different for me I knew It was you ,can't be any more sure that I love you and in that moment I knew I have one sole goal for now ,<br> making u mine ",
+        "We only know what we had when its gone and u were the most wonderful thing that I let go but now I realise what I had and I want it for the rest of my life<br> you are the one  ",
+        "i have to tried to explain this feeling several times and i might have came close but i can never put into words how much i love you <br> we were great earlier but only some of my flaws didnt make it happen<br> but since that day u just entered my heart and never left and i know u will never leave for my heart has found home in you <br> ",
+        "i just cant get enough of this obsession with you , from the moment i wake till the moment i sleep only you wander in me <br> i feel so lucky to have fallen in love with a girl so perfect who never left my side no matter how i was and now<br> i want to be with her on her side forever ",
+        "my day is incomplete without your voice and you and so is my life <br> everything that i am today has your influence in it <br> and no other thing rather than love can change person so much in a span of months and not even months just some days ",
+        "i just want to spend the rest of my life with you , but its too early to ask to marry you so just gonna <br>stick to telling about my love XD anyways i hope that u had enough time to figure this out and i just couldnt keep myself away from making you mine any longer ..<br> you make me believe in love. ",
+      ];
+      var len = imageArray.length;
+      var t = 0;
+      window.onload = function () {
+        var context = new AudioContext();
+      };
+    </script>
+
+    <script type="text/javascript" src="./js/stars.js"></script>
+    <script type="text/javascript" src="./js/typeWriter.js"></script>
+    <script type="text/javascript" src="./js/date.js"></script>
+    <script type="text/javascript" src="./js/playImg.js"></script>
+  </body>
+</html>
